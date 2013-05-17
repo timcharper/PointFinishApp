@@ -64,31 +64,31 @@ if(typeof FUI === "undefined"){FUI={};}
 
 	FUI.TabGroup_1.prototype.createTab_5 = function(){
 
-		this.tab_5 = Titanium.UI.createTab({icon:Ti.UI.iPhone.SystemIcon.BOOKMARKS,title:"Tab_5"});
+		this.tab_5 = Titanium.UI.createTab({title:"Settings"});
 
 	};
 
 	FUI.TabGroup_1.prototype.createTab_4 = function(){
 
-		this.tab_4 = Titanium.UI.createTab({icon:"tab4.png",title:"Tab_4"});
+		this.tab_4 = Titanium.UI.createTab({title:"Friends"});
 
 	};
 
 	FUI.TabGroup_1.prototype.createTab_3 = function(){
 
-		this.tab_3 = Titanium.UI.createTab({icon:"tab3.png",title:"Tab_3"});
+		this.tab_3 = Titanium.UI.createTab({title:"My Location"});
 
 	};
 
 	FUI.TabGroup_1.prototype.createTab_2 = function(){
 
-		this.tab_2 = Titanium.UI.createTab({icon:"tab2.png",title:"Tab_2"});
+		this.tab_2 = Titanium.UI.createTab({title:"Create"});
 
 	};
 
 	FUI.TabGroup_1.prototype.createTab_1 = function(){
 
-		this.tab_1 = Titanium.UI.createTab({icon:"tab1.png",title:"Tab_1"});
+		this.tab_1 = Titanium.UI.createTab({title:"Profile"});
 
 	};
 

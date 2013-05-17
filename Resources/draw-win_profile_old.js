@@ -24,6 +24,6 @@ var name_profile = Ti.UI.createLabel({
     top:30
 })
 view1.add(image_profile);
-
+view2.add(name_profile);
 win_profile.add(view1);
 win_profile.add(view2);

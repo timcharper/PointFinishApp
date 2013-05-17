@@ -20,7 +20,7 @@ m_TabGroup1.tab_3.window = win_map;
 m_TabGroup1.tab_2.window = win2;
 
 m_TabGroup1.tab_1.icon = "man.png"; //Profile
-m_TabGroup1.tab_2.icon = "whistle.png"; //Create Objective
+m_TabGroup1.tab_2.icon = "direction-path.png"; //Create Objective
 m_TabGroup1.tab_3.icon = "compass.png"; //My Location / Map View
 m_TabGroup1.tab_4.icon = "drama.png"; //Friends
 m_TabGroup1.tab_5.icon = "spanner.png"; //Friends

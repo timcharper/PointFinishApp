@@ -74,10 +74,9 @@
           </java.beans.PropertyChangeSupport>
         </listeners>
         <type>Titanium.UI.Window</type>
-        <backgroundColor>#FEFFF5</backgroundColor>
         <children>
-          <com.forgedui.model.titanium.Button>
-            <name>Button_1</name>
+          <com.forgedui.model.titanium.View>
+            <name>View_1</name>
             <location>
               <x>0</x>
               <y>0</y>
@@ -91,86 +90,22 @@
               <java.beans.PropertyChangeSupport>
                 <default>
                   <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-                  <source class="com.forgedui.model.titanium.Button" reference="../../../.."/>
+                  <source class="com.forgedui.model.titanium.View" reference="../../../.."/>
                 </default>
                 <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
                 <null/>
               </java.beans.PropertyChangeSupport>
             </listeners>
-            <type>Titanium.UI.Button</type>
-            <height>36</height>
-            <left>195</left>
-            <top>42</top>
-            <width>110</width>
-            <title>No press me</title>
-          </com.forgedui.model.titanium.Button>
-          <com.forgedui.model.titanium.Button>
-            <name>Button_2</name>
-            <location>
-              <x>0</x>
-              <y>0</y>
-            </location>
-            <dimension>
-              <width>0</width>
-              <height>0</height>
-            </dimension>
-            <parent class="com.forgedui.model.titanium.Window" reference="../../.."/>
-            <listeners serialization="custom">
-              <java.beans.PropertyChangeSupport>
-                <default>
-                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-                  <source class="com.forgedui.model.titanium.Button" reference="../../../.."/>
-                </default>
-                <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
-                <null/>
-              </java.beans.PropertyChangeSupport>
-            </listeners>
-            <type>Titanium.UI.Button</type>
-            <height>36</height>
-            <left>15</left>
-            <top>42</top>
-            <width>110</width>
-            <title>Press me</title>
-          </com.forgedui.model.titanium.Button>
-          <com.forgedui.model.titanium.ProgressBar>
-            <name>ProgressBar_1</name>
-            <location>
-              <x>0</x>
-              <y>0</y>
-            </location>
-            <dimension>
-              <width>0</width>
-              <height>0</height>
-            </dimension>
-            <parent class="com.forgedui.model.titanium.Window" reference="../../.."/>
-            <listeners serialization="custom">
-              <java.beans.PropertyChangeSupport>
-                <default>
-                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-                  <source class="com.forgedui.model.titanium.ProgressBar" reference="../../../.."/>
-                </default>
-                <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
-                <null/>
-              </java.beans.PropertyChangeSupport>
-            </listeners>
-            <type>Titanium.UI.ProgressBar</type>
-            <height>12</height>
-            <left>15</left>
-            <top>132</top>
-            <width>290</width>
-            <max>100.0</max>
-            <min>0.0</min>
-            <value>0.0</value>
-          </com.forgedui.model.titanium.ProgressBar>
+            <type>Titanium.UI.View</type>
+            <children/>
+          </com.forgedui.model.titanium.View>
         </children>
       </window>
     </screen>
     <names>
-      <string>Button_2</string>
-      <string>Button_1</string>
+      <string>View_1</string>
       <string>Screen_1</string>
       <string>window1</string>
-      <string>ProgressBar_1</string>
     </names>
     <elementsListener class="com.forgedui.model.Diagram$DiagramNamesCollector" reference="../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
   </diagram>

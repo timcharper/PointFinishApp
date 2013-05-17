@@ -1,0 +1,219 @@
+<com.forgedui.model.ForgeduiModel>
+  <version>1</version>
+  <diagram>
+    <name>TabGroup_Diagram</name>
+    <location>
+      <x>0</x>
+      <y>0</y>
+    </location>
+    <dimension>
+      <width>0</width>
+      <height>0</height>
+    </dimension>
+    <listeners serialization="custom">
+      <java.beans.PropertyChangeSupport>
+        <default>
+          <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+          <source class="com.forgedui.model.Diagram" reference="../../../.."/>
+        </default>
+        <com.forgedui.model.Diagram_-DiagramNamesCollector>
+          <outer-class reference="../../../.."/>
+        </com.forgedui.model.Diagram_-DiagramNamesCollector>
+        <null/>
+      </java.beans.PropertyChangeSupport>
+    </listeners>
+    <children/>
+    <platform>iPhone</platform>
+    <resolution>
+      <width>320</width>
+      <height>568</height>
+    </resolution>
+    <resForText>
+      <width>640</width>
+      <height>1136</height>
+    </resForText>
+    <screen>
+      <name>Screen_1</name>
+      <location>
+        <x>0</x>
+        <y>0</y>
+      </location>
+      <dimension>
+        <width>0</width>
+        <height>0</height>
+      </dimension>
+      <parent class="com.forgedui.model.Diagram" reference="../.."/>
+      <listeners serialization="custom">
+        <java.beans.PropertyChangeSupport>
+          <default>
+            <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+            <source class="com.forgedui.model.Screen" reference="../../../.."/>
+          </default>
+          <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+          <null/>
+        </java.beans.PropertyChangeSupport>
+      </listeners>
+      <tabGroup>
+        <name>TabGroup_1</name>
+        <location>
+          <x>0</x>
+          <y>0</y>
+        </location>
+        <dimension>
+          <width>0</width>
+          <height>0</height>
+        </dimension>
+        <parent class="com.forgedui.model.Screen" reference="../.."/>
+        <listeners serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              <source class="com.forgedui.model.titanium.TabGroup" reference="../../../.."/>
+            </default>
+            <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </listeners>
+        <type>Titanium.UI.TabGroup</type>
+        <tabs>
+          <com.forgedui.model.titanium.Tab>
+            <name>Tab_1</name>
+            <location>
+              <x>0</x>
+              <y>0</y>
+            </location>
+            <dimension>
+              <width>0</width>
+              <height>0</height>
+            </dimension>
+            <parent class="com.forgedui.model.titanium.TabGroup" reference="../../.."/>
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                  <source class="com.forgedui.model.titanium.Tab" reference="../../../.."/>
+                </default>
+                <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+            <type>Titanium.UI.Tab</type>
+            <icon>tab1.png</icon>
+            <title>Tab_1</title>
+          </com.forgedui.model.titanium.Tab>
+          <com.forgedui.model.titanium.Tab>
+            <name>Tab_2</name>
+            <location>
+              <x>0</x>
+              <y>0</y>
+            </location>
+            <dimension>
+              <width>0</width>
+              <height>0</height>
+            </dimension>
+            <parent class="com.forgedui.model.titanium.TabGroup" reference="../../.."/>
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                  <source class="com.forgedui.model.titanium.Tab" reference="../../../.."/>
+                </default>
+                <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+            <type>Titanium.UI.Tab</type>
+            <icon>tab2.png</icon>
+            <title>Tab_2</title>
+          </com.forgedui.model.titanium.Tab>
+          <com.forgedui.model.titanium.Tab>
+            <name>Tab_3</name>
+            <location>
+              <x>0</x>
+              <y>0</y>
+            </location>
+            <dimension>
+              <width>0</width>
+              <height>0</height>
+            </dimension>
+            <parent class="com.forgedui.model.titanium.TabGroup" reference="../../.."/>
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                  <source class="com.forgedui.model.titanium.Tab" reference="../../../.."/>
+                </default>
+                <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+            <type>Titanium.UI.Tab</type>
+            <icon>tab3.png</icon>
+            <title>Tab_3</title>
+          </com.forgedui.model.titanium.Tab>
+          <com.forgedui.model.titanium.Tab>
+            <name>Tab_4</name>
+            <location>
+              <x>0</x>
+              <y>0</y>
+            </location>
+            <dimension>
+              <width>0</width>
+              <height>0</height>
+            </dimension>
+            <parent class="com.forgedui.model.titanium.TabGroup" reference="../../.."/>
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                  <source class="com.forgedui.model.titanium.Tab" reference="../../../.."/>
+                </default>
+                <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+            <type>Titanium.UI.Tab</type>
+            <icon>tab4.png</icon>
+            <title>Tab_4</title>
+          </com.forgedui.model.titanium.Tab>
+          <com.forgedui.model.titanium.Tab>
+            <name>Tab_5</name>
+            <location>
+              <x>0</x>
+              <y>0</y>
+            </location>
+            <dimension>
+              <width>0</width>
+              <height>0</height>
+            </dimension>
+            <parent class="com.forgedui.model.titanium.TabGroup" reference="../../.."/>
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                  <source class="com.forgedui.model.titanium.Tab" reference="../../../.."/>
+                </default>
+                <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+            <type>Titanium.UI.Tab</type>
+            <icon>tab5.png</icon>
+            <title>Tab_5</title>
+          </com.forgedui.model.titanium.Tab>
+        </tabs>
+      </tabGroup>
+    </screen>
+    <names>
+      <string>Tab_1</string>
+      <string>Screen_1</string>
+      <string>TabGroup_1</string>
+      <string>TabGroup_Diagram</string>
+      <string>Tab_3</string>
+      <string>Tab_2</string>
+      <string>Tab_5</string>
+      <string>Tab_4</string>
+    </names>
+    <elementsListener class="com.forgedui.model.Diagram$DiagramNamesCollector" reference="../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+  </diagram>
+</com.forgedui.model.ForgeduiModel>

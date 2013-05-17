@@ -1,0 +1,86 @@
+<com.forgedui.model.ForgeduiModel>
+  <version>1</version>
+  <diagram>
+    <location>
+      <x>0</x>
+      <y>0</y>
+    </location>
+    <dimension>
+      <width>0</width>
+      <height>0</height>
+    </dimension>
+    <listeners serialization="custom">
+      <java.beans.PropertyChangeSupport>
+        <default>
+          <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+          <source class="com.forgedui.model.Diagram" reference="../../../.."/>
+        </default>
+        <com.forgedui.model.Diagram_-DiagramNamesCollector>
+          <outer-class reference="../../../.."/>
+        </com.forgedui.model.Diagram_-DiagramNamesCollector>
+        <null/>
+      </java.beans.PropertyChangeSupport>
+    </listeners>
+    <children/>
+    <platform>iPhone</platform>
+    <resolution>
+      <width>320</width>
+      <height>568</height>
+    </resolution>
+    <resForText>
+      <width>640</width>
+      <height>1136</height>
+    </resForText>
+    <screen>
+      <name>Screen_1</name>
+      <location>
+        <x>0</x>
+        <y>0</y>
+      </location>
+      <dimension>
+        <width>0</width>
+        <height>0</height>
+      </dimension>
+      <parent class="com.forgedui.model.Diagram" reference="../.."/>
+      <listeners serialization="custom">
+        <java.beans.PropertyChangeSupport>
+          <default>
+            <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+            <source class="com.forgedui.model.Screen" reference="../../../.."/>
+          </default>
+          <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+          <null/>
+        </java.beans.PropertyChangeSupport>
+      </listeners>
+      <window>
+        <name>Profile</name>
+        <location>
+          <x>0</x>
+          <y>0</y>
+        </location>
+        <dimension>
+          <width>0</width>
+          <height>0</height>
+        </dimension>
+        <parent class="com.forgedui.model.Screen" reference="../.."/>
+        <listeners serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              <source class="com.forgedui.model.titanium.Window" reference="../../../.."/>
+            </default>
+            <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </listeners>
+        <type>Titanium.UI.Window</type>
+        <children/>
+      </window>
+    </screen>
+    <names>
+      <string>Screen_1</string>
+      <string>Profile</string>
+    </names>
+    <elementsListener class="com.forgedui.model.Diagram$DiagramNamesCollector" reference="../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+  </diagram>
+</com.forgedui.model.ForgeduiModel>

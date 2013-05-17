@@ -1,4 +1,4 @@
-var win_map = Titanium.UI.createWindow({  
+win_map = Titanium.UI.createWindow({  
     title:'Map',
     backgroundColor:'#fff'
 });
@@ -51,7 +51,7 @@ function updateMap(_args) {
 }
 var theMap = Titanium.Map.createView({
             mapType: Ti.Map.SATELLITE_TYPE,
-            region: {latitude:42.909134, longitude:0.145054, 
+            region: {latitude:40.76406177105147, longitude:-111.90228044986725, 
                       latitudeDelta:0.01, longitudeDelta:0.01},
             animate:true,
             regionFit:true,
@@ -114,3 +114,43 @@ theMap.addAnnotation(coffee4);
 theMap.addAnnotation(coffee5);
 win_map.add(theMap);
 
+
+function distanceinM(_args) {
+    // ---- extend Number object with methods for converting degrees/radians
+    /** Converts numeric degrees to radians */
+    if (typeof(Number.prototype.toRad) === "undefined") {
+      Number.prototype.toRad = function() {
+        return this * Math.PI / 180;
+      }
+    }
+    var R = 3960; // m    --- if you want it in KM then use 6371
+    var dLat = (_args.toLat-_args.fromLat).toRad();
+    var dLon = (_args.toLon-_args.fromLon).toRad();
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(_args.fromLat.toRad()) * Math.cos(_args.toLat.toRad()) * 
+            Math.sin(dLon/2) * Math.sin(dLon/2); 
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    var d = R * c;
+    return d;
+};
+
+/*
+function distanceFromCoffeeX(_args) {
+    switch(coffeeX) {
+        case 1:
+            return distanceinM({
+              fromLon : _args.lon,
+              fromLat : _args.lat,
+              toLon   : -111.90228044986725,
+              toLat   : 40.76406177105147});
+          break;
+        case 2:
+          break;
+        case 3:
+          break;
+        case 4:
+          break;
+        case 5:
+          break;
+};
+*/

@@ -82,7 +82,7 @@ if(typeof FUI === "undefined"){FUI={};}
 
 	FUI.TabGroup_1.prototype.createTab_2 = function(){
 
-		this.tab_2 = Titanium.UI.createTab({title:"Create"});
+		this.tab_2 = Titanium.UI.createTab({title:"Objectives"});
 
 	};
 

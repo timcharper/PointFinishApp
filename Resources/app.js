@@ -19,11 +19,11 @@ win2.add(image);
 m_TabGroup1.tab_3.window = win_map;
 m_TabGroup1.tab_2.window = win2;
 
-m_TabGroup1.tab_1.icon = "man.png"; //Profile
-m_TabGroup1.tab_2.icon = "direction-path.png"; //Create Objective
-m_TabGroup1.tab_3.icon = "compass.png"; //My Location / Map View
-m_TabGroup1.tab_4.icon = "drama.png"; //Friends
-m_TabGroup1.tab_5.icon = "spanner.png"; //Friends
+m_TabGroup1.tab_1.icon = "images/profile.png"; //Profile
+m_TabGroup1.tab_2.icon = "images/createobjective.png"; //Create Objective
+m_TabGroup1.tab_3.icon = "images/mylocation.png"; //My Location / Map View
+m_TabGroup1.tab_4.icon = "images/friends.png"; //Friends
+m_TabGroup1.tab_5.icon = "images/settings.png"; //Settings
 
 
 m_TabGroup1.tabGroup_1.open();

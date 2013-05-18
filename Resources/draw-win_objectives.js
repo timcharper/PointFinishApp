@@ -32,9 +32,13 @@ var xhr = Ti.Network.createHTTPClient({
                   
               });
               var btn_right = Ti.UI.createLabel({
-                  text:'Right Arrow', 
+                  //text:'Right Arrow', 
                   top:100,
                   left:250,
+                  width:59,
+                  height:58,
+                  backgroundImage:'images/arrow_right.png',
+                  text:' '
               });
               //var btn_left = Ti.UI.createLabel({
               //    text:'Left Arrow',

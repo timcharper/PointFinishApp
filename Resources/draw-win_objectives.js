@@ -35,16 +35,23 @@ var xhr = Ti.Network.createHTTPClient({
               var btn1 = Ti.UI.createButton({
                   top:5,
                   left:10,
-                  height:40,
+                  height:75,
                   width:"90%",
                   title:objectives[i].name
               });
               var btnLabel = Ti.UI.createLabel({
                   text: objectives[i].description,
-                  font: { fontSize:12 },
-                  top:25
+                  font: { fontSize:14 },
+                  top:25,
+                  left: 65
               });
-              btn1.add(btnLabel);
+              var leftImage = Ti.UI.createImageView({
+                  image:objectives[i].icon,
+                  width:56,
+                  left:5
+              });
+              //btn1.add(btnLabel);
+              btn1.add(leftImage);
               row.add(btn1);
               rowData.push(row);
               addClickHandler(btn1, objectives[i]);

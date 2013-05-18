@@ -9,13 +9,17 @@ var json, name, start_coordinates, i, row, nameLabel, nickLabel;
  
 var xhr = Ti.Network.createHTTPClient({
     onload: function() {
-        Ti.API.error(this.responseText);
+        //Ti.API.error(this.responseText);
         objectives = JSON.parse(this.responseText); //to consume, objectives[0].name <-- like this
     
-        
-        
         tableview = Ti.UI.createTableView();
         rowData = [];
+        addClickHandler = function(btn, objective) {
+            btn.addEventListener('click',function(evt){
+              current_objective_objectId = objective.objectId;
+              Ti.API.error("Just set variable current_objective_objectId to: " + current_objective_objectId);
+            });
+        };
         for (i=0; i < objectives.length; i++) {
               row = Ti.UI.createTableViewRow();
               btn1 = Ti.UI.createButton({
@@ -26,22 +30,22 @@ var xhr = Ti.Network.createHTTPClient({
                   title:objectives[i].name
               });
               var btnLabel = Ti.UI.createLabel({
-                  text:objectives[i].description,
+                  text: objectives[i].description,
                   font: { fontSize:8 },
                   top:25
               })
               btn1.add(btnLabel);
               row.add(btn1);
               rowData.push(row);
+              addClickHandler(btn1, objectives[i]);
         }
         tableview.setData(rowData);
 
-        tableview.addEventListener('click',function(evt){
 
                // Ti.API.error(objectives[i].start_coordinates)
             //distanceFromMe({latitude:objectives[i].start_coordinates[0],
             //                longitude:objectives[i].start_coordinates[1]}); //must consume in this function because of async/time wait for GPS
-        })
+         // })
 
         win_objectives.add(tableview);
     }

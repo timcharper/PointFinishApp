@@ -33,8 +33,7 @@ function getLocation(_args) {
        {
           alert('error ' + JSON.stringify(e.error));
        }
-       if (_args.success) _args.success(e.coords)
-
+       if (_args.success) _args.success(e.coords);
     });
      
 };
@@ -48,7 +47,7 @@ var theMap = Titanium.Map.createView({
             region: {latitude:40.76406177105147, longitude:-111.90228044986725, 
                       latitudeDelta:0.01, longitudeDelta:0.01},
             animate:true,
-            regionFit:true,
+            regionFit:true
         });
 
 var coffee1 = Titanium.Map.createAnnotation({
@@ -108,55 +107,3 @@ theMap.addAnnotation(coffee4);
 theMap.addAnnotation(coffee5);
 win_map.add(theMap);
 
-
-
-
-
-function distanceinM(_args) {  //M = MILES
-    // ---- extend Number object with methods for converting degrees/radians
-    /** Converts numeric degrees to radians */
-   
-    if (typeof(Number.prototype.toRad) === "undefined") {
-      Number.prototype.toRad = function() {
-        return this * Math.PI / 180;
-      }
-    }
-    var R = 3960; // m    --- if you want it in KM then use 6371
-    var dLat = (_args.toLat-_args.fromLat).toRad();
-    var dLon = (_args.toLon-_args.fromLon).toRad();
-    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-            Math.cos(_args.fromLat.toRad()) * Math.cos(_args.toLat.toRad()) * 
-            Math.sin(dLon/2) * Math.sin(dLon/2); 
-    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-    var d = R * c;
-    return d;
-};
-
-
-/*
-function distanceFromTo(_args) {
-    return distanceinM({
-       fromLon : _args.lonF,
-       fromLat : _args.latF,
-       toLon   : _args.lonT,
-       toLat   : _args.latT});
-};
-
-function distanceFromMe(_args){
-  return distanceinM({
-          fromLon : _args.longitude,
-          fromLat : _args.latitude,
-          toLon   : curLongitude,
-          toLat   : curLatitude
-        });
-}
-*/
-
-
-/*
-distanceinM({
-                fromLat:e.coords.latitude,
-                fromLon:e.coords.longitude,
-                toLat:40.76406177105147,
-                toLon:-111.90228044986725}); //in miles
-                */

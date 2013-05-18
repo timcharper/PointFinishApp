@@ -16,11 +16,11 @@ var xhr = Ti.Network.createHTTPClient({
     },
     onload: function() {
         //Ti.API.error(this.responseText);
-        objectives = JSON.parse(this.responseText); //to consume, objectives[0].name <-- like this
+        var objectives = JSON.parse(this.responseText); //to consume, objectives[0].name <-- like this
     
-        tableview = Ti.UI.createTableView();
-        rowData = [];
-        addClickHandler = function(btn, objective) {
+        var tableview = Ti.UI.createTableView();
+        var rowData = [];
+        var addClickHandler = function(btn, objective) {
             btn.addEventListener('click',function(evt){
               current_objective_objectId = objective.objectId;
               Ti.API.error("Just set variable current_objective_objectId to: " + current_objective_objectId);

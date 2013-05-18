@@ -24,7 +24,7 @@ if (Ti.Geolocation.locationServicesEnabled) {
 
     Ti.Geolocation.addEventListener('location', function(e) {
         if (e.error) {
-            alert('Error: ' + e.error);
+            //alert('Error: ' + e.error);
         } else {
             curLatitude = e.coords.latitude; //global
             curLongitude = e.coords.longitude; //global

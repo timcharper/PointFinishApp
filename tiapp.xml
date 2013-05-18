@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.testingProject</id>
-    <name>testingProject</name>
+    <id>com.pointFinish.pointFinish1</id>
+    <name>Point Finish</name>
     <version>1.0</version>
     <publisher>jamesalton</publisher>
     <url>http://</url>

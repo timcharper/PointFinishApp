@@ -9,6 +9,11 @@ var tableData = [];
 var json, name, start_coordinates, i, row, nameLabel, nickLabel;
  
 var xhr = Ti.Network.createHTTPClient({
+    timeout:5000,
+    onerror: function() {
+        Ti.API.error("we had an error loading page.");
+        onload();
+    },
     onload: function() {
         //Ti.API.error(this.responseText);
         objectives = JSON.parse(this.responseText); //to consume, objectives[0].name <-- like this
@@ -28,17 +33,20 @@ var xhr = Ti.Network.createHTTPClient({
                   height:160,
                   backgroundColor:'white',
                   color:'black',
-                  text:objective.description
+                  text:objective.description + "\nStarting location"
                   
               });
-              var btn_right = Ti.UI.createLabel({
+              var btn_right = Ti.UI.createButton({
                   //text:'Right Arrow', 
                   top:100,
                   left:250,
                   width:59,
                   height:58,
                   backgroundImage:'images/arrow_right.png',
-                  text:' '
+                  zIndex: 1000
+              });
+              nav_label.addEventListener('click', function() { //had to turn this on - bug fix, maybe allowing click event to propogate to children?
+              //                    Ti.API.error("Hello");
               });
               //var btn_left = Ti.UI.createLabel({
               //    text:'Left Arrow',
@@ -49,19 +57,23 @@ var xhr = Ti.Network.createHTTPClient({
               //nav_label.add(btn_left);
               win_map.add(nav_label);
               win_map.open();
-              theMap.setLocation({latitude : objective.geoPointStart.latitude,
+              theMap.setLocation({latitudeDelta:0.001, longitudeDelta:0.001,
+                                  latitude : objective.geoPointStart.latitude,
                                   longitude : objective.geoPointStart.longitude,
                                   region: {latitude:objective.geoPointStart.latitude, longitude:objective.geoPointStart.longitude, 
-                                           latitudeDelta:0.01, longitudeDelta:0.01},
+                                           latitudeDelta:0.0001, longitudeDelta:0.0001},
                                   });
                                   Ti.API.error(objective.geoPointStart.latitude,objective.geoPointStart.longitude);
-              btn_right.addEventListener('click', function(){
-              theMap.setLocation({latitude : objective.geoPointEnd.latitude,
-                                  longitude : objective.geoPointEnd.longitude,
-                                  region: {latitude:objective.geoPointEnd.latitude, longitude:objective.geoPointEnd.longitude, 
-                                           latitudeDelta:0.01, longitudeDelta:0.01},
+              btn_right.addEventListener('click', function() {
+                                  Ti.API.error("it should change locations");
+                                  theMap.setLocation({latitudeDelta:0.001, longitudeDelta:0.001,
+                                      latitude : objective.geoPointEnd.latitude,
+                                        longitude : objective.geoPointEnd.longitude,
+                                        region: {latitude:objective.geoPointEnd.latitude, longitude:objective.geoPointEnd.longitude, 
+                                                latitudeDelta:0.0001, longitudeDelta:0.0001},
                                   });
-                                  Ti.API.error(objective.geoPointEnd.latitude,objective.geoPointEnd.longitude);
+                                  nav_label.text = objective.description + "\nEnding location";
+                                  
               });
 
             });

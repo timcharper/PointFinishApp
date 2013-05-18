@@ -12,8 +12,7 @@ messy_as_hell_lock_thing = 0;
 var xhr = Ti.Network.createHTTPClient({
     timeout:5000,
     onerror: function() {
-        Ti.API.error("we had an error loading page.");
-        //NEED A WAY TO RETRY LOAD
+        Ti.API.info("xhr erorr: " + e.error);
     },
     onload: function() {
         //Ti.API.error(this.responseText);

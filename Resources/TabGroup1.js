@@ -1,3 +1,4 @@
+
 //To start using this generated code .. simply include this file in your app.js
 
 //Ti.include("your generated window file.js goes here");

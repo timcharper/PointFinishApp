@@ -56,10 +56,38 @@ var win1 = Ti.UI.createWindow();
 win1.add(m_profile.view_1);
 
 
+
+var win_friends = Ti.UI.createWindow({
+    backgroundColor:'black'
+});
+var image_friends = Ti.UI.createImageView({
+    image:'images/Friends_nophoneborder.png',
+    top:0,
+    left:0
+});
+win_friends.add(image_friends);
+
+
+var win_profile2 = Ti.UI.createWindow({
+    backgroundColor:'black'
+});
+var image_profile2 = Ti.UI.createImageView({
+    image:'images/Profile-mockup.png',
+    top:0,
+    left:0
+});
+win_profile2.add(image_profile2);
+
+
+
+
+
 //m_TabGroup1.tab_1.window = win_profile;
-m_TabGroup1.tab_1.window = win1;
+//m_TabGroup1.tab_1.window = win1;
+m_TabGroup1.tab_1.window = win_profile2;
 m_TabGroup1.tab_2.window = win_objectives;
 m_TabGroup1.tab_3.window = win_map;
+m_TabGroup1.tab_4.window = win_friends;
 
 
 

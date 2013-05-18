@@ -27,14 +27,14 @@ var xhr = Ti.Network.createHTTPClient({
 
               m_TabGroup1.tabGroup_1.setActiveTab(2); //go to map/my location (to present mission)
               var nav_label = Ti.UI.createLabel({
-                  top:300,
+                  top:225,
                   left:5,
                   width:320,
-                  height:160,
+                  height:200,
                   backgroundColor:'white',
                   color:'black',
-                  text:objective.description + "\nStarting location"
-                  
+                  text:objective.description + "\n(Starting location)",
+                  font: { fontSize:14 },
               });
               var btn_right = Ti.UI.createButton({
                   //text:'Right Arrow', 
@@ -73,9 +73,9 @@ var xhr = Ti.Network.createHTTPClient({
                                                         region: {latitude:objective.geoPointEnd.latitude, longitude:objective.geoPointEnd.longitude, 
                                                                  latitudeDelta:0.0001, longitudeDelta:0.0001},
                                                         });
-                                     nav_label.text = objective.description + "\nEnding location";
+                                     nav_label.text = objective.description + "\n(Ending location)";
                                      btn_right.backgroundImage = 'images/arrow_left.png';
-                                     btn_right.left = 10;
+                                     //btn_right.left = 10;
                                      messy_as_hell_lock_thing = 1;
                                   } else {
                                      theMap.setLocation({latitudeDelta:0.001, longitudeDelta:0.001,
@@ -84,9 +84,9 @@ var xhr = Ti.Network.createHTTPClient({
                                                          region: {latitude:objective.geoPointStart.latitude, longitude:objective.geoPointStart.longitude, 
                                                               latitudeDelta:0.0001, longitudeDelta:0.0001},
                                                          });
-                                     nav_label.text = objective.description + "\nStarting location";
+                                     nav_label.text = objective.description + "\n(Starting location)";
                                      btn_right.backgroundImage = 'images/arrow_right.png';
-                                     btn_right.left = 250;
+                                     //btn_right.left = 250;
                                      messy_as_hell_lock_thing = 0;
                                   }
 
@@ -106,7 +106,7 @@ var xhr = Ti.Network.createHTTPClient({
               });
               var btnLabel = Ti.UI.createLabel({
                   text: objectives[i].description,
-                  font: { fontSize:8 },
+                  font: { fontSize:12 },
                   top:25
               })
               btn1.add(btnLabel);

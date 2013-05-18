@@ -79,6 +79,7 @@ MissionController.prototype = {
       left:5,
       width:300,
       height:200,
+      verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
       color:'black',
       text: '',
       font: { fontSize:14 }
@@ -86,11 +87,19 @@ MissionController.prototype = {
 
     this.btn_right = Ti.UI.createButton({
       //text:'Right Arrow',
-      top:100,
-      left:250,
+      top:145,
+      left:245,
       width:59,
       height:58,
       backgroundImage:'images/arrow_right.png',
+      zIndex: 1000
+    });
+    this.yelp_icon = Ti.UI.createButton({
+      top:150,
+      left:195,
+      width:43,
+      height:43,
+      backgroundImage:'images/yelp.jpg',
       zIndex: 1000
     });
     //var btn_left = Ti.UI.createLabel({
@@ -101,6 +110,7 @@ MissionController.prototype = {
     this.container_view_element.add(this.view);
 		this.view.add(this.nav_label);
     this.nav_label.add(this.btn_right);
+    this.nav_label.add(this.yelp_icon);
 
     //had to turn this on - bug fix, maybe allowing click event to propogate to children?
     this.nav_label.addEventListener('click', function() { });

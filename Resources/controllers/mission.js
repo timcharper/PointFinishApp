@@ -164,6 +164,7 @@ var Handlers = {
     image: "yelp.jpg",
     action: function(arg) {
   	  Ti.API.error("Open yelp to " + arg);
+      Titanium.Platform.openURL(arg);
     }
 	},
 	photo: { 

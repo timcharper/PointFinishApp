@@ -18,3 +18,22 @@ fb.addEventListener('login', function(e) {
 fb.authorize();
 
 //test change
+
+// First make sure this permission exists
+fb.permissions = ['publish_stream'];
+fb.authorize();
+
+
+// Now create the status message after you've confirmed that authorize() succeeded
+fb.requestWithGraphPath('me/feed', {message: "Team 'Point Finish' rules!"}, 
+         "POST", function(e) {
+    if (e.success) {
+        alert("Success!  From FB: " + e.result);
+    } else {
+        if (e.error) {
+            alert(e.error);
+        } else {
+            alert("Unkown result");
+        }
+    }
+});

@@ -12,7 +12,7 @@ var xhr = Ti.Network.createHTTPClient({
     timeout:5000,
     onerror: function() {
         Ti.API.error("we had an error loading page.");
-        onload();
+        //NEED A WAY TO RETRY LOAD
     },
     onload: function() {
         //Ti.API.error(this.responseText);

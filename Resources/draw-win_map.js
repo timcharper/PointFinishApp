@@ -2,18 +2,14 @@ win_map = Titanium.UI.createWindow({
     title:'Map',
     backgroundColor:'#fff'
 });
-
 function isLocationAuthorized(_args) {
     //check that we are allowed to use
     var retVal = true;
     if (!Ti.Geolocation.locationServicesEnabled) return false;
-    
     if (Ti.Platform.name === 'iPhone OS') {
       // Explain to the user why we are going to use the location services.
-    
       Ti.Geolocation.purpose = _args.purpose;
       var authorization = Titanium.Geolocation.locationServicesAuthorization;
-      
       if (authorization == Titanium.Geolocation.AUTHORIZATION_DENIED) {
         // user has decided to not allow this use of location
         retVal = false;
@@ -24,9 +20,7 @@ function isLocationAuthorized(_args) {
       } else retVal = true;
     }
     return retVal;
-    
 };
-
 function getLocation(_args) {
     // we dont ned to be any more accurate than this
     // ACCURACY_LOW is one of the few settings that work with both Android and iOS

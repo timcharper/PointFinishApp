@@ -61,7 +61,7 @@ var xhr = Ti.Network.createHTTPClient({
         win_objectives.open();
     }
 });
-    
+
 xhr.open("GET", url);
 xhr.setRequestHeader('Accept','application/json');
 xhr.send();

@@ -115,9 +115,13 @@ theMap.addAnnotation(coffee5);
 win_map.add(theMap);
 
 
-function distanceinM(_args) {
+
+
+
+function distanceinM(_args) {  //M = MILES
     // ---- extend Number object with methods for converting degrees/radians
     /** Converts numeric degrees to radians */
+   
     if (typeof(Number.prototype.toRad) === "undefined") {
       Number.prototype.toRad = function() {
         return this * Math.PI / 180;
@@ -135,6 +139,7 @@ function distanceinM(_args) {
 };
 
 
+/*
 function distanceFromTo(_args) {
     return distanceinM({
        fromLon : _args.lonF,
@@ -144,20 +149,20 @@ function distanceFromTo(_args) {
 };
 
 function distanceFromMe(_args){
-  tempLat = _args.longitude;
-  tempLon = _args.latitude;
   return distanceinM({
-          fromLon : tempLon,
-          fromLat : tempLat,
+          fromLon : _args.longitude,
+          fromLat : _args.latitude,
           toLon   : curLongitude,
           toLat   : curLatitude
         });
 }
+*/
 
-function convertMetersToFeet(input){
-    return input/0.3048;
-}
 
-function convertMetersToMiles(input){
-    return input*0.000621371192;
-}
+/*
+distanceinM({
+                fromLat:e.coords.latitude,
+                fromLon:e.coords.longitude,
+                toLat:40.76406177105147,
+                toLon:-111.90228044986725}); //in miles
+                */

@@ -134,23 +134,30 @@ function distanceinM(_args) {
     return d;
 };
 
-/*
-function distanceFromCoffeeX(_args) {
-    switch(coffeeX) {
-        case 1:
-            return distanceinM({
-              fromLon : _args.lon,
-              fromLat : _args.lat,
-              toLon   : -111.90228044986725,
-              toLat   : 40.76406177105147});
-          break;
-        case 2:
-          break;
-        case 3:
-          break;
-        case 4:
-          break;
-        case 5:
-          break;
+
+function distanceFromTo(_args) {
+    return distanceinM({
+       fromLon : _args.lonF,
+       fromLat : _args.latF,
+       toLon   : _args.lonT,
+       toLat   : _args.latT});
 };
-*/
+
+function distanceFromMe(_args){
+  tempLat = _args.longitude;
+  tempLon = _args.latitude;
+  return distanceinM({
+          fromLon : tempLon,
+          fromLat : tempLat,
+          toLon   : curLongitude,
+          toLat   : curLatitude
+        });
+}
+
+function convertMetersToFeet(input){
+    return input/0.3048;
+}
+
+function convertMetersToMiles(input){
+    return input*0.000621371192;
+}

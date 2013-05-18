@@ -360,23 +360,84 @@
                 <width>47%</width>
                 <image>images/Logo-StartUpWeekend</image>
               </com.forgedui.model.titanium.ImageView>
+              <com.forgedui.model.titanium.Label>
+                <name>Label_2</name>
+                <location>
+                  <x>0</x>
+                  <y>0</y>
+                </location>
+                <dimension>
+                  <width>0</width>
+                  <height>0</height>
+                </dimension>
+                <parent class="com.forgedui.model.titanium.View" reference="../../.."/>
+                <listeners serialization="custom">
+                  <java.beans.PropertyChangeSupport>
+                    <default>
+                      <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                      <source class="com.forgedui.model.titanium.Label" reference="../../../.."/>
+                    </default>
+                    <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+                    <null/>
+                  </java.beans.PropertyChangeSupport>
+                </listeners>
+                <type>Titanium.UI.Label</type>
+                <height>15%</height>
+                <left>0%</left>
+                <top>32%</top>
+                <width>31%</width>
+                <backgroundColor>#FFFFFF</backgroundColor>
+                <borderRadius>3.0</borderRadius>
+                <text>Label_2</text>
+              </com.forgedui.model.titanium.Label>
+              <com.forgedui.model.titanium.Label>
+                <name>Label_3</name>
+                <location>
+                  <x>0</x>
+                  <y>0</y>
+                </location>
+                <dimension>
+                  <width>0</width>
+                  <height>0</height>
+                </dimension>
+                <parent class="com.forgedui.model.titanium.View" reference="../../.."/>
+                <listeners serialization="custom">
+                  <java.beans.PropertyChangeSupport>
+                    <default>
+                      <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                      <source class="com.forgedui.model.titanium.Label" reference="../../../.."/>
+                    </default>
+                    <com.forgedui.model.Diagram_-DiagramNamesCollector reference="../../../../../../../../../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
+                    <null/>
+                  </java.beans.PropertyChangeSupport>
+                </listeners>
+                <type>Titanium.UI.Label</type>
+                <height>15%</height>
+                <left>33%</left>
+                <top>32%</top>
+                <width>29%</width>
+                <text>Label_3</text>
+                <color>#FFFFFF</color>
+              </com.forgedui.model.titanium.Label>
             </children>
           </com.forgedui.model.titanium.View>
         </children>
       </window>
     </screen>
     <names>
-      <string>View_1</string>
+      <string>Label_3</string>
       <string>Screen_1</string>
-      <string>label_name</string>
       <string>ImageView_2</string>
       <string>Profile</string>
       <string>ImageView_1</string>
       <string>label_points</string>
       <string>label_level</string>
+      <string>Label_2</string>
+      <string>Label_1</string>
+      <string>View_1</string>
+      <string>label_name</string>
       <string>label_notoriety</string>
       <string>label_location</string>
-      <string>Label_1</string>
     </names>
     <elementsListener class="com.forgedui.model.Diagram$DiagramNamesCollector" reference="../listeners/java.beans.PropertyChangeSupport/com.forgedui.model.Diagram_-DiagramNamesCollector"/>
   </diagram>
